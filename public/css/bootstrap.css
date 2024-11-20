@@ -1,0 +1,54 @@
+body {
+    background-color: #D1BE9C;
+}
+/* estilos en recetas */
+.container-fluid{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.receta{
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #F9EAE1;
+}
+.receta-iframe iframe{
+    width: 100%;
+    height: 50vh;
+}
+.receta img{
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}
+.carousel-item img{
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+@media (max-width:900px) {
+    .carousel-inner{
+        object-fit: contain;
+    }
+    .carousel-item img{
+        object-fit: contain;
+        height: auto;
+    }
+}
+/* Estilos recetas dulces */
+.card-img-top{
+    height: 400px;
+    object-fit: cover;
+}
+.card-title{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+.boton1{
+    margin: 10px;
+    align-self: center;
+}

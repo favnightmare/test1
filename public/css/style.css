@@ -1,0 +1,191 @@
+/* ESTILOS COMUNES */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* 
+color primario:#AA998F;
+color contraste/fondos:#7D4F50;
+color claro/texto:#F9EAE1;
+color botones:#CC8B86;
+color secundario:#D1BE9C; */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+}
+img{
+    border-radius: 10px;
+}
+/* estilos header */
+header{
+    padding: 60px;
+    text-align: center;
+    background-image: url('../img/headerimg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header div{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.4);
+    color: #F9EAE1;
+    font-size: 1.1rem;
+}
+@media (max-width:900px) {
+    header{
+        background-position: center;
+    }
+}
+/* ESTILOS NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #7D4F50;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar a {
+    color: #F9EAE1;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+.navbar a:hover{
+    background-color: #F9EAE1;
+    color: #7D4F50;
+}
+@media (max-width:900px) {
+    .navbar{
+        flex-direction: column;
+        position: unset;
+    }
+    .navbar a{
+        text-align: center;
+    }
+}
+/* estilos parte principal */
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex-basis: 25%;
+    background-color: #D1BE9C;
+    text-align: center;
+    padding: 10px;
+}
+.asideTitulo{
+    text-decoration: underline;
+    font-weight: 700;
+}
+.image img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+.image:hover img{
+    transform: scale(1.06);
+}
+main{
+    flex-basis: 75%;
+    background-color: #F9EAE1;
+    padding: 20px;
+    padding-left: 40px;
+}
+main h2{
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #7D4F50;
+    text-align: center;
+    font-size: 1.4rem;
+}
+main h5{
+    text-align: right;
+}
+main p {
+    font-style: italic;
+}
+main img {
+    width: 100%;
+}
+.leer-mas{
+    background-color: #7D4F50;
+    color: #F9EAE1;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+}
+.leer-mas:hover{
+    background-color: #D1BE9C;
+    color: #7D4F50;
+}
+.ver-mas{
+    display: block;
+    background-color: #7D4F50;
+    color: #F9EAE1;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.ver-mas:hover{
+    background-color: #D1BE9C;
+    color: #7D4F50;
+}
+@media (max-width:900px) {
+    .principal{
+        flex-direction: column;
+    }
+    .image img{
+        width: 60%;
+        height: auto;
+    }
+}
+/* estilos footer */
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: #F9EAE1;
+}
+/* estilos del formulario */
+form {
+    padding: 40px;
+    background-color: #F9EAE1;
+    text-align: center;
+    height: 100%;
+}
+fieldset{
+    display: grid;
+    grid-template-columns: 30vw 20vw;
+    gap: 10px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: #7D4F50 5px solid;
+}
+label{
+    background-color: #D1BE9C;
+    color: #7D4F50;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+@media (max-width:900px) {
+    fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+}
